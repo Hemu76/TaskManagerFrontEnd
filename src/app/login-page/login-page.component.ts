@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { DataService } from '../data-service.service';
 import { FormsModule } from '@angular/forms';
+import { DataService } from '../data-service.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-task-manager-login',
+  selector: 'app-login-page',
   standalone: true,
   imports: [FormsModule],
-  templateUrl: './task-manager-login.component.html',
-  styleUrl: './task-manager-login.component.css'
+  templateUrl: './login-page.component.html',
+  styleUrl: './login-page.component.css'
 })
-export class TaskManagerLoginComponent {
+export class LoginPageComponent {
   constructor(private dataService:DataService,private router: Router){}
   textInputValue1: string = '';
   textInputValue2: string = '';

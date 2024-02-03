@@ -1,10 +1,9 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { TaskManagerLoginComponent } from './task-manager-login/task-manager-login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 export const routes: Routes = [
-    { path: 'login', component: TaskManagerLoginComponent },
     { path: 'dashboard', component: DashboardComponent },
+    {path: 'loginPage',component:LoginPageComponent}
 ];
